@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to top, #f0f4fa, #ffffff);
+  padding: 2rem;
+  color: #333;
+}
+.form-container {
+  max-width: 900px;
+  margin: auto;
+  background: linear-gradient(0deg, #ffffff 0%, #f4f7fb 100%);
+  border-radius: 32px;
+  padding: 30px;
+  border: 5px solid #ffffff;
+  box-shadow: rgba(133, 189, 215, 0.9) 0px 30px 30px -20px;
+}
+
+.form-card h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: rgb(16, 137, 211);
+  font-weight: 900;
+}
+section {
+  margin-bottom: 2rem;
+}
+section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+  font-weight: 600;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.form-group input,
+.form-group select,
+.form-control,
+.form-select {
+  width: 100% !important;
+  background: white !important;
+  border: none !important;
+  padding: 14px 18px !important;
+  border-radius: 20px !important;
+  box-shadow: #cff0ff 0px 10px 10px -5px !important;
+  border-inline: 2px solid transparent !important;
+  font-size: 1rem !important;
+  transition: all 0.2s ease !important;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-control:focus,
+.form-select:focus {
+  outline: none !important;
+  border-inline: 2px solid #12b1d1 !important;
+  box-shadow: #cff0ff 0px 10px 10px -5px !important;
+}
+.form-group input::placeholder,
+.form-control::placeholder {
+  color: #aaa !important;
+}
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.btn {
+  padding: 0.9rem 2rem !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  border-radius: 20px !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease-in-out !important;
+}
+.btn.primary {
+  background: linear-gradient(45deg, #1089d3, #12b1d1) !important;
+  color: white !important;
+  box-shadow: rgba(133, 189, 215, 0.9) 0px 20px 10px -15px !important;
+}
+.btn.primary:hover {
+  transform: scale(1.03) !important;
+  box-shadow: rgba(133, 189, 215, 0.9) 0px 23px 10px -20px !important;
+}
+.btn.primary:active {
+  transform: scale(0.95) !important;
+}
+.btn.secondary {
+  background: #e5e7eb !important;
+  color: #111827 !important;
+}
+.btn.secondary:hover {
+  background: #d1d5db !important;
+}
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
